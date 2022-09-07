@@ -1,0 +1,58 @@
+body{
+	background: #162831;
+}
+
+img{
+position: absolute;
+width: 60px;
+height: 60px;
+left: 200px;
+top: 30px;
+}
+
+ .class-1{
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+font-family: 'Proxima Nova Condensed', sans-serif;
+gap: 54px; /*для хрома 54 расстоян. между строками*/
+display: flex;
+position: absolute;
+width: 655px;
+height: 19px;
+left: 450px;
+top: 51px;
+}
+
+
+ a { 
+    width: 52px;
+height: 19px;
+font-family: 'Proxima Nova';
+font-style: normal;
+font-size: 14px;
+line-height: 135%;
+flex: none;
+flex-grow: 0;
+text-decoration: none; /* Отменяем подчеркивание у ссылки */
+   color: #FFFFFF;
+   } 
+
+.class-2{
+width: 155px;
+height: 36px;
+left: 1455px;
+top: 43px;
+background: #018ABE;
+border-radius: 5px;/* округляет края фона*/
+padding: 9px 15px;
+	color: #FFFFFF;
+	display: flex;
+flex-direction: row;
+justify-content: center;/* распределение пространства бразуером */
+align-items: center; /* выравнивание элементов вдоль поперечной оси*/
+padding: 9px 15px;
+gap: 10px;
+
+}
+
