@@ -3,42 +3,27 @@ body{
 }
 
 img{
-position: absolute;
-width: 60px;
-height: 60px;
-left: 200px;
-top: 30px;
+   display: flex;
+   margin: 30px 1548px 0px 312px;
 }
 
- .class-1{
+ .menu{
+display:flex;
 flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-font-family: 'Proxima Nova Condensed', sans-serif;
-gap: 54px; /*для хрома 54 расстоян. между строками*/
-display: flex;
-position: absolute;
-width: 655px;
-height: 19px;
-left: 450px;
-top: 51px;
+flex-wrap:nowrap;
+padding: 51px 1282px 0px 586px;
+gap: 50px;
 }
-
 
  a { 
-    width: 52px;
-height: 19px;
-font-family: 'Proxima Nova';
-font-style: normal;
-font-size: 14px;
-line-height: 135%;
 flex: none;
-flex-grow: 0;
-text-decoration: none; /* Отменяем подчеркивание у ссылки */
+font-size: 14px;
+font-family: 'Segoe WP N', sans-serif;
+text-decoration: none;
    color: #FFFFFF;
    } 
 
-.class-2{
+.кнопка{
 width: 155px;
 height: 36px;
 left: 1455px;
