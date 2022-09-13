@@ -17,7 +17,8 @@ gap: 50px;
 }
 
  a { 
-flex: none;
+   display:flex;
+   flex: none;
 font-size: 14px;
 font-family: 'Segoe WP N', sans-serif;
 text-decoration: none;
@@ -60,4 +61,17 @@ left: 667px;
 top: 365px;
 position: absolute;
    color: #FFFFFF;
+}
+
+.seans{
+   display: flex;
+   font-family: 'El Messiri', sans-serif;
+   font-size: 42px;
+   color: #FFFFFF;
+   left: 792px;
+top: 890px;
+position: absolute;
+}
+.group{
+   display: grid;
 }
