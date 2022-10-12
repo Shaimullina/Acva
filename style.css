@@ -11,6 +11,12 @@ padding-top: 30px;
 padding-bottom: 50px;
 }
 
+p {
+   margin: 0;
+   font-size: 16px;
+   line-height: 32px;
+}
+
 .wrapper{
 margin: 0 auto;
 width: 100%;
@@ -150,33 +156,37 @@ a {
       color: #ffffff;
   }
 
-  .info__obo{
+  .info__obo {
    padding: 150px 0;
 
   }
-  .inf_obo2{
+  .inf_obo-title {
+   text-align: center;
+}
+
+  .inf_obo2 {
+   position: relative;
+   display: inline-block;
+   padding: 0 45px;
    margin-bottom: 100px;
-    font-family: 'El Messiri', sans-serif;
-    font-weight: 243;
-    font-size: 42px;
-    line-height: 140%;
-    color: #ffffff;
-    text-align: center;
-  }
+   font-family: 'El Messiri', sans-serif;
+   font-weight: 300;
+   font-size: 42px;
+   line-height: 140%;
+   color: #ffffff;
+   text-align: center;
+}
 
   .grid2 {
    display: grid;
    grid-template:
        "a b"
        "c d";
-   grid-template-rows: 200px;
    gap: 24px;
 }
 
 .grid__desc{
    position: relative;
-   display: flex;
-   align-items: flex-end;
    grid-area: small;
    padding: 30px 40px;
    color: #ffffff;
@@ -184,24 +194,18 @@ a {
    overflow: hidden;
   
 }
-.zagolovok{
+.title__mini{
    font-family: 'El Messiri', sans-serif;
    font-size: 24px;
 }
 
-.grid__st{
-   font-size: 16px;
+.grid__st,
+.grid__st2 {
    font-family: 'Quattrocento Roman', sans-serif;
-   line-height: 0.5;
 }
 
-.grid__st2{
-   font-size: 16px;
-   font-family: 'Quattrocento Roman', sans-serif;
-   line-height: 0.5;
-}
 
-.grid__img2{
+.grid__img2 {
    position: absolute;
    top: 0;
    left: 0;
@@ -210,7 +214,6 @@ a {
 
 .grid__desc:first-child {
    grid-area: a;
-   height: 260px;
    padding: 50px;
 }
 
@@ -219,17 +222,17 @@ a {
 }
 
 .grid__desc:nth-child(3) {
-   grid-area: c;
+   grid-area: d;
 }
 
 .grid__desc:nth-child(4) {
-   grid-area: d;
+   grid-area: c;
 }
-.cost{
+.cost {
    padding: 150px 0;
 }
 
-  .cost2{
+  .cost2 {
    margin-bottom: 100px;
     font-family: 'El Messiri', sans-serif;
     font-weight: 243;
@@ -237,4 +240,107 @@ a {
     line-height: 140%;
     color: #ffffff;
     text-align: center;
+  }
+
+  .text {
+   margin-bottom: 20px;
+}
+
+.main__features {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.sertificate__tittle {
+   font-size: 21px;
+   color: #ffffff;
+   font-family: 'El Messiri', sans-serif;
+   margin-bottom: 10px;
+   text-align: center;
+   margin-top: 30px;
+}
+.features__cost {
+   color: #ffffff;
+   font-size: 18px;
+   text-align: center;
+   font-family: 'El Messiri', sans-serif;
+   text-overflow: clip;
+   ;
+}
+
+.small__cost {
+   text-align: right; /* Выравнивание по правому краю */
+   padding-right: 220px; /* Отступ справа */
+   padding-bottom: 31px;
+}
+.mini__cost {
+   position: relative; /* Относительное позиционирование */
+    top: -1px; /* Смещаем поля вверх */
+    margin-bottom: 31px;
+    padding-left: 60px; /* Расстояние между строк */
+}
+.map__info {
+padding: 150px 0;
+}
+
+.map__move {
+   border-radius: 10px;
+}
+
+.grid3{
+   display: grid;
+    grid-template:
+        "a b "
+        "a d ";
+    grid-template-rows: 258px;
+    gap: 24px;
+}
+.grid__map {
+   position: relative;
+   grid-area: small;
+   padding-top: 24px;
+   padding-right: 48px;
+   border-radius: 10px;
+   overflow: hidden;
+
+}
+
+   .grid__item:first-child {
+      grid-area: a;
+   
+  }
+  
+  .grid__item:nth-child(2) {
+      grid-area: d;
+  }
+  
+  
+  .grid__item:nth-child(3) {
+      grid-area: b;
+  }
+  
+  
+  .grid__title__map {
+   position: relative;   
+   font-weight: 700;
+   font-size: 24px;
+   color: #ffffff;
+   font-family: 'El Messiri', sans-serif;
+  }
+
+  .map__small,
+  .map__small2 {
+   background:#018ABE;
+   border-radius: 10px;
+      padding: 290px 392px;
+      color: #FFFFFF;
+  }
+
+  .small__word{
+   font-family: 'El Messiri', sans-serif;
+   font-size: 14px;
+   color: #ffffff;
+   margin-left: 312px;
   }
