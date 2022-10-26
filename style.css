@@ -17,10 +17,16 @@ p {
    line-height: 32px;
 }
 
+ul, ol {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
 .wrapper{
 margin: 0 auto;
 width: 100%;
-max-width: 1296px
+max-width: 1296px;
 }
 
 .header__inner {
@@ -284,8 +290,11 @@ a {
 .map__info {
 padding: 150px 0;
 }
-
 .map__move {
+   border-radius: 10px;
+}
+
+.map__move-inner {
    border-radius: 10px;
 }
 
@@ -294,7 +303,6 @@ padding: 150px 0;
     grid-template:
         "a b "
         "a d ";
-    grid-template-rows: 258px;
     gap: 24px;
 }
 .grid__map {
@@ -304,22 +312,24 @@ padding: 150px 0;
    padding-right: 48px;
    border-radius: 10px;
    overflow: hidden;
+    background:#018ABE;
+    border-radius: 10px;
+    color: #FFFFFF;
 
 }
 
-   .grid__item:first-child {
-      grid-area: a;
-   
-  }
-  
-  .grid__item:nth-child(2) {
-      grid-area: d;
-  }
-  
-  
-  .grid__item:nth-child(3) {
-      grid-area: b;
-  }
+.grid__map__map--big {
+   grid-area: a;
+}
+
+ .grid__map:nth-child(2) {
+     grid-area: b;
+ }
+
+
+ .grid__map:nth-child(3) {
+     grid-area: d;
+ }
   
   
   .grid__title__map {
@@ -328,19 +338,203 @@ padding: 150px 0;
    font-size: 24px;
    color: #ffffff;
    font-family: 'El Messiri', sans-serif;
-  }
-
-  .map__small,
-  .map__small2 {
-   background:#018ABE;
-   border-radius: 10px;
-      padding: 290px 392px;
-      color: #FFFFFF;
+   padding-bottom: 21px;
+   padding-left: 45px;
   }
 
   .small__word{
    font-family: 'El Messiri', sans-serif;
    font-size: 14px;
    color: #ffffff;
-   margin-left: 312px;
   }
+
+  .features__cost {
+   width: 50%;
+  }
+
+  .features__cost li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px
+  }
+
+  .white-btn {
+   font-size: 13px;
+   color: #018ABE;
+   background:#FFFFFF;
+   font-family: 'El Messiri', sans-serif;
+   padding: 9px 18px;
+   margin-left: 48px;
+   border-radius: 5px;
+   margin-bottom: 35px;
+  }
+
+  .address {
+   padding-bottom: 15px;
+  }
+
+.address__item {
+   display: flex;
+padding-left: 48px;
+padding-bottom: 21px;
+gap: 23px;
+}
+.small_word {
+   color: #ffffff;
+   font-size: 14px;
+   font-family: 'El Messiri', sans-serif;
+
+}
+.vl {
+   border-bottom: 1px solid #ffffff;
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1296px;
+}
+
+.tittle_news_small{
+   margin-bottom: 100px;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 140%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.grid4{
+   display: grid;
+    grid-template:
+        "a b c"
+        "d e f";
+    gap: 24px;
+    grid-template-rows: 258px 258px;
+    grid-template-columns: 416px 416px;
+    
+}
+.grid__new {
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+   grid-area: small;
+   padding: 30px 30px;
+   color: #ffffff;
+   border-radius: 10px;
+   overflow: hidden;
+
+}
+
+   .grid__new:first-child {
+      grid-area: a;
+
+}
+  
+  .grid__new:nth-child(2) {
+      grid-area: b;
+  }
+  
+  .grid__new:nth-child(3) {
+      grid-area: c;
+  }
+  
+  .grid__new:nth-child(4) {
+      grid-area: d;
+  }
+  
+  .grid__new:nth-child(5) {
+      grid-area: e;
+  }
+
+  .grid__new:nth-child(6) {
+   grid-area: f;
+}
+  
+  .grid__img4 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+  }
+  
+  .grid__title_new {
+      position: relative;
+      font-family: 'El Messiri', sans-serif;
+      font-weight: 700;
+      font-size: 21px;
+      color: #ffffff;
+  }
+  
+  .tittle_news {
+   padding: 60px 0px ;
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1296px
+  }
+  .number{
+   position: absolute;
+   font-family: 'El Messiri', sans-serif;
+   display: flex;
+   text-align:left;
+   font-size: 14px;
+   background:#018ABE;
+   padding: 5px 12px;
+   border-radius: 5px;
+   margin-bottom: 144px;
+  }
+  
+  .vl2 {
+   border-bottom: 1px solid #ffffff;
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1296px;
+   padding-top: 120px;
+}
+.small_word2 {
+   color: #ffffff;
+   font-size: 14px;
+   font-family: 'El Messiri', sans-serif; 
+   padding-top: 30px;
+}
+.form_main{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+   gap:134px;
+   text-overflow: clip;
+}
+
+.form_text {
+display: flex;
+flex-direction: column;
+}
+
+.form_date {
+   position: absolute;
+   font-family: 'El Messiri', sans-serif;
+   font-size: 14px;
+   background:#018ABE;
+   padding: 5px 12px;
+   border-radius: 5px;
+   margin-bottom: 50px;
+   color: #ffffff;
+}
+
+.form_tittle {
+   font-family: 'El Messiri', sans-serif;
+   font-size: 24px;
+   color: #ffffff;
+   padding-top: 50px;
+}
+
+.form_small_text {
+   font-family: 'El Messiri', sans-serif;
+   font-size: 16px;
+   color: #ffffff;
+   text-overflow: clip;
+   text-align:left;
+}
+
+.form_hands {
+
+
+}
