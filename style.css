@@ -4,17 +4,24 @@
 
 body{
 	background: #162831;
+   font-family: 'Proxima Nova', sans-serif;
 }
 
 .header {
 padding-top: 30px;
 padding-bottom: 50px;
+border-bottom: 10px;
+color: #ffffff ;
+margin: 0 auto;
+width: 100%;
+max-width: 1296px;
 }
 
 p {
    margin: 0;
    font-size: 16px;
    line-height: 32px;
+   margin-bottom: 15px;
 }
 
 ul, ol {
@@ -40,6 +47,7 @@ align-items: center;
    flex-direction: row;
    flex-wrap:nowrap;
    gap: 50px;
+   font-family: 'El Messiri', sans-serif;
 }
 .menu__item{
    color: #ffffff;
@@ -62,6 +70,11 @@ a {
    background: #018ABE;
    border-radius: 5px;
 }
+.main-btn:hover{
+   color:#162831;
+   text-decoration: underline;
+}
+
 
 .hero{
    display: flex;
@@ -182,7 +195,93 @@ a {
    color: #ffffff;
    text-align: center;
 }
+.inf_obo2::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   margin: auto;
+   width: 28px;
+   height: 14px;
+   background-image: url("images/лепесток\ лево\ \(2\).png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
 
+.inf_obo2::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   width: 28px;
+   height: 14px;
+   background-image: url("images/лепесток\ право\ \(2\).png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.small_zag2::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   margin: auto;
+   width: 28px;
+   height: 14px;
+   background-image: url("images/лепесток\ лево\ \(2\).png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.small_zag2::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   width: 28px;
+   height: 14px;
+   background-image: url("images/лепесток\ право\ \(2\).png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.cost2::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   margin: auto;
+   width: 28px;
+   height: 14px;
+   background-image: url("images/лепесток\ лево\ \(2\).png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.cost2::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   width: 28px;
+   height: 14px;
+   background-image: url("images/лепесток\ право\ \(2\).png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
   .grid2 {
    display: grid;
    grid-template:
@@ -256,6 +355,7 @@ a {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   margin-bottom: 150px;
 
 }
 
@@ -273,7 +373,12 @@ a {
    text-align: center;
    font-family: 'El Messiri', sans-serif;
    text-overflow: clip;
-   ;
+   margin-left: 134px;
+
+}
+.features__cost:hover{
+   color: #000;
+   transition: margin-left 4s;
 }
 
 .small__cost {
@@ -288,7 +393,7 @@ a {
     padding-left: 60px; /* Расстояние между строк */
 }
 .map__info {
-padding: 150px 0;
+
 }
 .map__move {
    border-radius: 10px;
@@ -368,6 +473,10 @@ padding: 150px 0;
    border-radius: 5px;
    margin-bottom: 35px;
   }
+  .white-btn:hover{
+   color:#162831;
+   text-decoration: underline;
+}
 
   .address {
    padding-bottom: 15px;
@@ -473,13 +582,13 @@ gap: 23px;
   .number{
    position: absolute;
    font-family: 'El Messiri', sans-serif;
-   display: flex;
    text-align:left;
    font-size: 14px;
    background:#018ABE;
    padding: 5px 12px;
    border-radius: 5px;
-   margin-bottom: 144px;
+   top:30px;
+   left:35px;
   }
   
   .vl2 {
@@ -534,7 +643,10 @@ flex-direction: column;
    text-align:left;
 }
 
-.form_hands {
-
-
+.line_bt{
+   border-top: #ffffff;
+   border: 40px;
+  margin: 0 auto;
+width: 100%;
+max-width: 1296px;
 }
