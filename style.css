@@ -2,7 +2,7 @@
    box-sizing: border-box;
 }
 
-body{
+body {
 	background: #162831;
    font-family: 'Proxima Nova', sans-serif;
 }
@@ -30,7 +30,7 @@ ul, ol {
    list-style-type: none;
 }
 
-.wrapper{
+.wrapper {
 margin: 0 auto;
 width: 100%;
 max-width: 1296px;
@@ -42,14 +42,14 @@ justify-content: space-between;
 align-items: center;
 }
 
-.menu{
+.menu {
    display: flex;
    flex-direction: row;
    flex-wrap:nowrap;
    gap: 50px;
    font-family: 'El Messiri', sans-serif;
 }
-.menu__item{
+.menu__item {
    color: #ffffff;
    font-size: 14px;
 }
@@ -57,7 +57,7 @@ a {
    text-decoration: none;
 }
 
-.content{
+.content {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -70,13 +70,13 @@ a {
    background: #018ABE;
    border-radius: 5px;
 }
-.main-btn:hover{
+.main-btn:hover {
    color:#162831;
    text-decoration: underline;
 }
 
 
-.hero{
+.hero {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -89,7 +89,7 @@ a {
    border-radius: 10px;
 }
 
-.content__tittle{
+.title_small {
    font-family: 'El Messiri', sans-serif;
    font-weight: 700;
    font-size: 64px;
@@ -98,18 +98,18 @@ a {
    text-align: center;
 }
 
-.content__inf {
+.title_big {
    margin-bottom: 40px;
    font-family: 'El Messiri', sans-serif;
    font-weight: 700;
    font-size: 24px;
    color: #ffffff;
 }
-.small__zag{
+.center-block {
    padding: 150px 0;
 
 }
-.small_zag2{
+.main-title {
    margin-bottom: 100px;
     font-family: 'El Messiri', sans-serif;
     font-weight: 700;
@@ -119,7 +119,7 @@ a {
     text-align: center;
 }
 
-.grid{
+.grid {
    display: grid;
     grid-template:
         "a b c"
@@ -175,27 +175,11 @@ a {
       color: #ffffff;
   }
 
-  .info__obo {
+  .hydrotherapy {
    padding: 150px 0;
 
-  }
-  .inf_obo-title {
-   text-align: center;
 }
-
-  .inf_obo2 {
-   position: relative;
-   display: inline-block;
-   padding: 0 45px;
-   margin-bottom: 100px;
-   font-family: 'El Messiri', sans-serif;
-   font-weight: 300;
-   font-size: 42px;
-   line-height: 140%;
-   color: #ffffff;
-   text-align: center;
-}
-.inf_obo2::before {
+.main-title::before {
    content: "";
    position: absolute;
    top: 0;
@@ -210,7 +194,7 @@ a {
    background-repeat: no-repeat;
 }
 
-.inf_obo2::after {
+.main-title::after {
    content: "";
    position: absolute;
    top: 0;
@@ -220,69 +204,12 @@ a {
    width: 28px;
    height: 14px;
    background-image: url("images/лепесток\ право\ \(2\).png");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-.small_zag2::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   margin: auto;
-   width: 28px;
-   height: 14px;
-   background-image: url("images/лепесток\ лево\ \(2\).png");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 }
 
-.small_zag2::after {
-   content: "";
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   margin: auto;
-   width: 28px;
-   height: 14px;
-   background-image: url("images/лепесток\ право\ \(2\).png");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-.cost2::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   margin: auto;
-   width: 28px;
-   height: 14px;
-   background-image: url("images/лепесток\ лево\ \(2\).png");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-
-.cost2::after {
-   content: "";
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   margin: auto;
-   width: 28px;
-   height: 14px;
-   background-image: url("images/лепесток\ право\ \(2\).png");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-  .grid2 {
+  .grid-hydrotherapy {
    display: grid;
    grid-template:
        "a b"
@@ -290,68 +217,51 @@ a {
    gap: 24px;
 }
 
-.grid__desc{
+  
+.grid-hydrotherapy__title-mini {
+   font-family: 'El Messiri', sans-serif;
+   font-size: 24px;
+}
+
+.grid-hydrotherapy__text {
+   font-family: 'Quattrocento Roman', sans-serif;
    position: relative;
    grid-area: small;
    padding: 30px 40px;
    color: #ffffff;
    border-radius: 10px;
    overflow: hidden;
-  
-}
-.title__mini{
-   font-family: 'El Messiri', sans-serif;
-   font-size: 24px;
 }
 
-.grid__st,
-.grid__st2 {
-   font-family: 'Quattrocento Roman', sans-serif;
-}
-
-
-.grid__img2 {
+.grid-img__hydrotherapy {
    position: absolute;
    top: 0;
    left: 0;
    object-fit: cover;
 }
 
-.grid__desc:first-child {
+.grid-hydrotherapy__inner:first-child {
    grid-area: a;
    padding: 50px;
 }
 
-.grid__desc:nth-child(2) {
+.grid-hydrotherapy__inner:nth-child(2) {
    grid-area: b;
 }
 
-.grid__desc:nth-child(3) {
+.grid-hydrotherapy__inner:nth-child(3) {
    grid-area: d;
 }
 
-.grid__desc:nth-child(4) {
+.grid-hydrotherapy__inner:nth-child(4) {
    grid-area: c;
 }
-.cost {
-   padding: 150px 0;
-}
-
-  .cost2 {
-   margin-bottom: 100px;
-    font-family: 'El Messiri', sans-serif;
-    font-weight: 243;
-    font-size: 42px;
-    line-height: 140%;
-    color: #ffffff;
-    text-align: center;
-  }
 
   .text {
    margin-bottom: 20px;
 }
 
-.main__features {
+.main-features {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -359,7 +269,7 @@ a {
 
 }
 
-.sertificate__tittle {
+.mall-features__sertificate-tittle {
    font-size: 21px;
    color: #ffffff;
    font-family: 'El Messiri', sans-serif;
@@ -367,7 +277,7 @@ a {
    text-align: center;
    margin-top: 30px;
 }
-.features__cost {
+.main-features__cost {
    color: #ffffff;
    font-size: 18px;
    text-align: center;
@@ -376,7 +286,7 @@ a {
    margin-left: 134px;
 
 }
-.features__cost:hover{
+.main-features__cost:hover {
    color: #000;
    transition: margin-left 4s;
 }
@@ -392,25 +302,22 @@ a {
     margin-bottom: 31px;
     padding-left: 60px; /* Расстояние между строк */
 }
-.map__info {
-
-}
-.map__move {
+.grid__map__moove {
    border-radius: 10px;
 }
 
-.map__move-inner {
+.grid__map__moove--inner {
    border-radius: 10px;
 }
 
-.grid3{
+.grid-map {
    display: grid;
     grid-template:
         "a b "
         "a d ";
     gap: 24px;
 }
-.grid__map {
+.grid-map__inner {
    position: relative;
    grid-area: small;
    padding-top: 24px;
@@ -437,7 +344,7 @@ a {
  }
   
   
-  .grid__title__map {
+  .grid-title__map {
    position: relative;   
    font-weight: 700;
    font-size: 24px;
@@ -447,17 +354,17 @@ a {
    padding-left: 45px;
   }
 
-  .small__word{
+  .small__word {
    font-family: 'El Messiri', sans-serif;
    font-size: 14px;
    color: #ffffff;
   }
 
-  .features__cost {
+  .main-features__cost {
    width: 50%;
   }
 
-  .features__cost li {
+  .main-features__cost li {
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px
@@ -473,7 +380,7 @@ a {
    border-radius: 5px;
    margin-bottom: 35px;
   }
-  .white-btn:hover{
+  .white-btn:hover {
    color:#162831;
    text-decoration: underline;
 }
@@ -484,34 +391,17 @@ a {
 
 .address__item {
    display: flex;
-padding-left: 48px;
-padding-bottom: 21px;
-gap: 23px;
+   padding-left: 48px;
+   padding-bottom: 21px;
+   gap: 23px;
 }
-.small_word {
+.small-word {
    color: #ffffff;
    font-size: 14px;
    font-family: 'El Messiri', sans-serif;
-
-}
-.vl {
-   border-bottom: 1px solid #ffffff;
-   margin: 0 auto;
-   width: 100%;
-   max-width: 1296px;
 }
 
-.tittle_news_small {
-   margin-bottom: 100px;
-    font-family: 'El Messiri', sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 140%;
-    color: #ffffff;
-    text-align: center;
-}
-
-.grid4 {
+.grid-new-main {
    display: grid;
     grid-template:
         "a b c"
@@ -519,7 +409,6 @@ gap: 23px;
     gap: 24px;
     grid-template-rows: 258px 258px;
     grid-template-columns: 416px 416px;
-    
 }
 .grid__new {
    position: relative;
@@ -530,56 +419,51 @@ gap: 23px;
    color: #ffffff;
    border-radius: 10px;
    overflow: hidden;
-
 }
-
-   .grid__new:first-child {
+   .grid-new:first-child {
       grid-area: a;
-
 }
   
-  .grid__new:nth-child(2) {
+  .grid-new:nth-child(2) {
       grid-area: b;
   }
   
-  .grid__new:nth-child(3) {
+  .grid-new:nth-child(3) {
       grid-area: c;
   }
   
-  .grid__new:nth-child(4) {
+  .grid-new:nth-child(4) {
       grid-area: d;
   }
   
-  .grid__new:nth-child(5) {
+  .grid-new:nth-child(5) {
       grid-area: e;
   }
 
-  .grid__new:nth-child(6) {
+  .grid-new:nth-child(6) {
    grid-area: f;
 }
   
-  .grid__img4 {
+  .grid-img__new {
       position: absolute;
       top: 0;
       left: 0;
       object-fit: cover;
   }
-  
-  .grid__title_new {
+    .grid-new__title {
       position: relative;
       font-family: 'El Messiri', sans-serif;
       font-weight: 700;
       font-size: 21px;
       color: #ffffff;
   }
-  
-  .tittle_news {
+    .title-news {
    padding: 60px 0px ;
    margin: 0 auto;
    width: 100%;
    max-width: 1296px
   }
-  .number {
+  .grid-new__data {
    position: absolute;
    font-family: 'El Messiri', sans-serif;
    text-align:left;
@@ -598,27 +482,21 @@ gap: 23px;
    max-width: 1296px;
    padding-top: 120px;
 }
-.small_word2 {
-   color: #ffffff;
-   font-size: 14px;
-   font-family: 'El Messiri', sans-serif; 
-   padding-top: 30px;
-}
 
-.form_main {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
+.form-main {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
    gap:134px;
    text-overflow: clip;
 }
 
-.form_text {
-display: flex;
-flex-direction: column;
+.form-main__text {
+   display: flex;
+   flex-direction: column;
 }
 
-.form_date {
+.form-main__date {
    position: absolute;
    font-family: 'El Messiri', sans-serif;
    font-size: 14px;
@@ -629,14 +507,14 @@ flex-direction: column;
    color: #ffffff;
 }
 
-.form_tittle {
+.form-main__tittle {
    font-family: 'El Messiri', sans-serif;
    font-size: 24px;
    color: #ffffff;
    padding-top: 50px;
 }
 
-.form_small_text {
+.form-main__small-text {
    font-family: 'El Messiri', sans-serif;
    font-size: 16px;
    color: #ffffff;
@@ -644,14 +522,13 @@ flex-direction: column;
    text-align:left;
 }
 
-.line_bt {
+.line-main {
    border-top: #ffffff;
    border: 40px;
    margin: 0 auto;
    width: 100%;
    max-width: 1296px;
 }
-
 
 .hamburger {
    display: none;
