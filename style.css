@@ -89,7 +89,7 @@ a {
    border-radius: 10px;
 }
 
-.title_small {
+.hero__title {
    font-family: 'El Messiri', sans-serif;
    font-weight: 700;
    font-size: 64px;
@@ -98,7 +98,7 @@ a {
    text-align: center;
 }
 
-.title_big {
+.hero__tagline {
    margin-bottom: 40px;
    font-family: 'El Messiri', sans-serif;
    font-weight: 700;
@@ -117,6 +117,41 @@ a {
     line-height: 140%;
     color: #ffffff;
     text-align: center;
+}
+
+.main-title span {
+    position: relative;
+    padding: 0 50px;
+}
+
+.main-title span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 28px;
+    height: 14px;
+    background-image: url("images/petal_left.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-title span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 28px;
+    height: 14px;
+    background-image: url("images/petal_right.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .grid {
@@ -143,30 +178,30 @@ a {
       height: 540px;
       padding: 50px;
   }
-  
+
   .grid__item:nth-child(2) {
       grid-area: b;
   }
-  
+
   .grid__item:nth-child(3) {
       grid-area: c;
   }
-  
+
   .grid__item:nth-child(4) {
       grid-area: d;
   }
-  
+
   .grid__item:nth-child(5) {
       grid-area: e;
   }
-  
+
   .grid__img {
       position: absolute;
       top: 0;
       left: 0;
       object-fit: cover;
   }
-  
+
   .grid__title {
       position: relative;
       font-family: 'El Messiri', sans-serif;
@@ -177,36 +212,9 @@ a {
 
   .hydrotherapy {
    padding: 150px 0;
-
-}
-.main-title::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   margin: auto;
-   width: 28px;
-   height: 14px;
-   background-image: url("images/лепесток\ лево\ \(2\).png");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-
-.main-title::after {
-   content: "";
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   margin: auto;
-   width: 28px;
-   height: 14px;
-   background-image: url("images/лепесток\ право\ \(2\).png");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
+   margin: 0 auto;
+width: 100%;
+max-width: 1296px;
 }
 
   .grid-hydrotherapy {
@@ -217,7 +225,7 @@ a {
    gap: 24px;
 }
 
-  
+
 .grid-hydrotherapy__title-mini {
    font-family: 'El Messiri', sans-serif;
    font-size: 24px;
@@ -231,13 +239,6 @@ a {
    color: #ffffff;
    border-radius: 10px;
    overflow: hidden;
-}
-
-.grid-img__hydrotherapy {
-   position: absolute;
-   top: 0;
-   left: 0;
-   object-fit: cover;
 }
 
 .grid-hydrotherapy__inner:first-child {
@@ -269,7 +270,7 @@ a {
 
 }
 
-.mall-features__sertificate-tittle {
+.small-features__sertificate-tittle {
    font-size: 21px;
    color: #ffffff;
    font-family: 'El Messiri', sans-serif;
@@ -302,11 +303,11 @@ a {
     margin-bottom: 31px;
     padding-left: 60px; /* Расстояние между строк */
 }
-.grid__map__moove {
+.grid-map__block{
    border-radius: 10px;
 }
 
-.grid__map__moove--inner {
+.grid-map__inner {
    border-radius: 10px;
 }
 
@@ -317,9 +318,14 @@ a {
         "a d ";
     gap: 24px;
 }
+
+.grid-map__block {
+    grid-area: a;
+}
+
 .grid-map__inner {
    position: relative;
-   grid-area: small;
+   grid-area: b;
    padding-top: 24px;
    padding-right: 48px;
    border-radius: 10px;
@@ -327,25 +333,14 @@ a {
     background:#018ABE;
     border-radius: 10px;
     color: #FFFFFF;
-
 }
 
-.grid__map__map--big {
-   grid-area: a;
+.grid-map__inner_bottom {
+    grid-area: d;
 }
 
- .grid__map:nth-child(2) {
-     grid-area: b;
- }
-
-
- .grid__map:nth-child(3) {
-     grid-area: d;
- }
-  
-  
   .grid-title__map {
-   position: relative;   
+   position: relative;
    font-weight: 700;
    font-size: 24px;
    color: #ffffff;
@@ -364,10 +359,11 @@ a {
    width: 50%;
   }
 
-  .main-features__cost li {
+  .main-features__list li {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 20px
+      margin-bottom: 20px;
+      padding-right: 153px;
   }
 
   .white-btn {
@@ -410,7 +406,7 @@ a {
     grid-template-rows: 258px 258px;
     grid-template-columns: 416px 416px;
 }
-.grid__new {
+.grid-new {
    position: relative;
    display: flex;
    align-items: flex-end;
@@ -423,19 +419,19 @@ a {
    .grid-new:first-child {
       grid-area: a;
 }
-  
+
   .grid-new:nth-child(2) {
       grid-area: b;
   }
-  
+
   .grid-new:nth-child(3) {
       grid-area: c;
   }
-  
+
   .grid-new:nth-child(4) {
       grid-area: d;
   }
-  
+
   .grid-new:nth-child(5) {
       grid-area: e;
   }
@@ -443,8 +439,8 @@ a {
   .grid-new:nth-child(6) {
    grid-area: f;
 }
-  
-  .grid-img__new {
+
+  .grid-new__img {
       position: absolute;
       top: 0;
       left: 0;
@@ -474,14 +470,6 @@ a {
    top:30px;
    left:35px;
   }
-  
-  .vl2 {
-   border-bottom: 1px solid #ffffff;
-   margin: 0 auto;
-   width: 100%;
-   max-width: 1296px;
-   padding-top: 120px;
-}
 
 .form-main {
    display: flex;
@@ -523,8 +511,7 @@ a {
 }
 
 .line-main {
-   border-top: #ffffff;
-   border: 40px;
+   border-top: 1px solid #ffffff;
    margin: 0 auto;
    width: 100%;
    max-width: 1296px;
@@ -587,16 +574,36 @@ a {
 
 }
 
-@media(max-width: 900px) {
-   .menu {
-       display: none;
-   }
+.footer .wrapper {
+   border-top:1px solid #FFFFFF;
+}
 
-   .hamburger {
-       display: block;
-   }
+.main-title__petal {
+   display:inline-block;
+   position: relative; 
+   padding: 0 50px; 
 
 }
-.footer .wrapper{
-   border-top:1px solid #FFFFFF;
+
+@media(max-width: 900px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    .form-main {
+        flex-wrap: wrap;
+    }
+    .grid-new-main {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      grid-gap: 22px;
+      grid-auto-flow: dense;
+    }
 }
