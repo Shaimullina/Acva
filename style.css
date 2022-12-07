@@ -584,14 +584,29 @@ max-width: 1296px;
    padding: 0 50px; 
 
 }
+ 
 
 @media(max-width: 900px) {
     .menu {
         display: none;
     }
 
-    .hamburger {
-        display: block;
+    .hamburger.open {
+      display: inline-block;
+      position: relative;
+       background-color:#FFFFFF;
+       font-size: 30px;
+       color:#0b283c;
+       z-index: 1000;
+       width: 1000px;
+       height: 600px;
+       padding: 0;
+       cursor: pointer;
+       appearance: none;
+    }
+
+    .hamburger{
+      display: block;
     }
 
     .main-title {
@@ -606,4 +621,37 @@ max-width: 1296px;
       grid-gap: 22px;
       grid-auto-flow: dense;
     }
+
+    .main-btn{
+      padding-left: 30px;
+    }
+
+    .hero{
+    max-width: 100%;
+    }
+    .grid-hydrotherapy {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      text-align: center;
+      top: 20px;
+   }
+
+    .main-features {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .grid{
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      grid-gap: 22px;
+      grid-auto-flow: dense;
+    }
+    .grid-map {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      max-width: 1000px;
+    }
+
 }
