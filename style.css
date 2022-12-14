@@ -167,7 +167,7 @@ a {
    display: flex;
    align-items: flex-end;
    grid-area: small;
-   padding: 30px 40px;
+   padding: 45px 50px;
    color: #ffffff;
    border-radius: 10px;
    overflow: hidden;
@@ -175,8 +175,8 @@ a {
 
    .grid__item:first-child {
       grid-area: a;
-      height: 540px;
       padding: 50px;
+   
   }
 
   .grid__item:nth-child(2) {
@@ -200,6 +200,8 @@ a {
       top: 0;
       left: 0;
       object-fit: cover;
+      max-width: 100%;
+      max-height: auto;
   }
 
   .grid__title {
@@ -213,8 +215,8 @@ a {
   .hydrotherapy {
    padding: 150px 0;
    margin: 0 auto;
-width: 100%;
-max-width: 1296px;
+   width: 100%;
+   max-width: 1296px;
 }
 
   .grid-hydrotherapy {
@@ -267,7 +269,6 @@ max-width: 1296px;
    justify-content: space-between;
    align-items: center;
    margin-bottom: 150px;
-
 }
 
 .small-features__sertificate-tittle {
@@ -281,10 +282,10 @@ max-width: 1296px;
 .main-features__cost {
    color: #ffffff;
    font-size: 18px;
+   max-width: 100%;
    text-align: center;
    font-family: 'El Messiri', sans-serif;
    text-overflow: clip;
-   margin-left: 134px;
 
 }
 .main-features__cost:hover {
@@ -519,7 +520,7 @@ max-width: 1296px;
 
 .hamburger {
    display: none;
-   z-index: 1000;
+   z-index: 2000;
    width: 40px;
    height: 16px;
    padding: 0;
@@ -566,12 +567,10 @@ max-width: 1296px;
 
 .hamburger.open span {
    transform:  rotate(-45deg);
-
 }
 
 .hamburger.open span:after {
    transform: translateY(-10px) rotate(90deg);
-
 }
 
 .footer .wrapper {
@@ -584,42 +583,88 @@ max-width: 1296px;
    padding: 0 50px; 
 
 }
- 
+.grid-hydrotherapy__block{
+   max-width: 100%;
+   min-height: auto;
+}
+
+.address__icon {
+   width: 20px;
+ }
 
 @media(max-width: 900px) {
     .menu {
         display: none;
     }
-
-    .hamburger.open {
-      display: inline-block;
-      position: relative;
-       background-color:#FFFFFF;
-       font-size: 30px;
-       color:#0b283c;
-       z-index: 1000;
-       width: 1000px;
-       height: 600px;
-       padding: 0;
-       cursor: pointer;
-       appearance: none;
+    .menu.open {
+      position: fixed;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      top: 0;
+      text-align: center;
+      left: 0;
+      height: 100%;
+      align-items: center;
+      z-index: 2000;
+      background-color:#FFFFFF;
+      font-size: 30px;
     }
-
+    .menu__item{
+     color:#000;
+  }
     .hamburger{
       display: block;
     }
+    .hamburger.open span{
+      color: #000;
+    }
+    .hamburger.open span:after {
+      color: #000;
+    }
+
+   .hero__title{
+      font-size: 35px;
+   }
+
+   .center-block { 
+      padding-top: 35px;
+   }
 
     .main-title {
-        font-size: 30px;
+        font-size: 20px;
     }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      }
+
+     .grid__item { 
+      width: 100%;
+      min-height: 135px;
+      align-items:center;
+      margin-bottom: 5px;
+     }
+
+     .hydrotherapy {
+      padding-top: 25px;
+     }
+
+     .grid-img__hydrotherapy {
+      max-width: 100%;
+      min-height: auto;
+      margin: 0 auto;
+     }
+
+     .grid-hydrotherapy {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+   }
 
     .form-main {
         flex-wrap: wrap;
-    }
-    .grid-new-main {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      grid-gap: 22px;
-      grid-auto-flow: dense;
     }
 
     .main-btn{
@@ -629,29 +674,43 @@ max-width: 1296px;
     .hero{
     max-width: 100%;
     }
-    .grid-hydrotherapy {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1000px;
-      text-align: center;
-      top: 20px;
-   }
 
     .main-features {
       display: flex;
       flex-wrap: wrap;
+    }
+
+    .main-features__list {
+      max-width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    .main-features__cost {
+     margin: 0 auto;
+    }
+    .white-btn {
+      display: inline-block;
+      margin: 0 auto;
       text-align: center;
     }
-    .grid{
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      grid-gap: 22px;
-      grid-auto-flow: dense;
+
+    .address__item {
+      text-align: left;
     }
+   
     .grid-map {
       display: flex;
       flex-wrap: wrap;
       text-align: center;
-      max-width: 1000px;
+      width:100%;
     }
+
+}
+@media(max-width: 600px) {
+
+.grid-map__block {
+   width: 100%;
+   min-height: 270px;
+}
 
 }
